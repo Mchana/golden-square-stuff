@@ -1,3 +1,7 @@
 from lib.gratitudes import *
 
-def 
+def test_format():
+    gratitude = Gratitudes()
+    gratitude.add("bagels")
+    result = gratitude.format()
+    assert result == "Be grateful for:, bagels"
